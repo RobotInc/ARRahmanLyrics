@@ -68,7 +68,7 @@ public class albumSongList extends AppCompatActivity {
         Log.i("Movie Title",getIntent().getExtras().getString("Title"));
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(FirstLetterUpperCase.convert(getIntent().getExtras().getString("Title")));
+        getSupportActionBar().setTitle(getIntent().getExtras().getString("Title"));
         backgroundArt = (ImageView) findViewById(R.id.BackgroundArt);
         backgroundArt.setOnClickListener(new View.OnClickListener() {
             @Override
